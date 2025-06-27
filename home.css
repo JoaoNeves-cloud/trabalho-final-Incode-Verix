@@ -1,0 +1,305 @@
+/* BASE GERAL */
+
+body {
+
+  margin: 0;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: #f5f7fa;
+
+}
+
+/* LOGIN PAGE */
+
+.login-container {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100vh;
+
+}
+
+.login-container form {
+
+  background-color: white;
+
+  padding: 2rem;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  width: 100%;
+
+  max-width: 400px;
+
+}
+
+.title {
+
+  text-align: center;
+
+  margin-bottom: 1.5rem;
+
+  color: #2c3e50;
+
+}
+
+label {
+
+  display: block;
+
+  margin-bottom: 0.3rem;
+
+  font-weight: bold;
+
+}
+
+input {
+
+  width: 100%;
+
+  padding: 0.7rem;
+
+  margin-bottom: 1rem;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  font-size: 1rem;
+
+  transition: border-color 0.2s;
+
+  box-sizing: border-box;
+
+}
+
+input:focus {
+
+  border-color: #1abc9c;
+
+  outline: none;
+
+}
+
+/* BOTÕES GERAIS (ex: login) */
+
+button {
+
+  display: block;
+
+  width: 100%;
+
+  padding: 0.8rem;
+
+  background-color: #1abc9c;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+
+  box-sizing: border-box;
+
+  margin-top: 1rem;
+
+}
+
+button:hover {
+
+  background-color: #16a085;
+
+}
+
+button:disabled {
+
+  background-color: #ccc;
+
+  cursor: wait;
+
+}
+
+/* BOTÃO DE LOGOUT (header) */
+
+.logout-btn {
+
+  width: auto;
+
+  padding: 0.5rem 1rem;
+
+  background-color: white;
+
+  color: #1abc9c;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  margin: 0;
+
+}
+
+.logout-btn:hover {
+
+  background-color: #f0f0f0;
+
+}
+
+/* MENSAGEM DE ERRO */
+
+.error-message {
+
+  color: red;
+
+  margin-top: 0.5rem;
+
+  text-align: center;
+
+  font-size: 0.9rem;
+
+}
+
+/* HEADER DO DASHBOARD */
+
+.header {
+
+  background-color: #1abc9c;
+
+  color: white;
+
+  padding: 1rem 2rem;
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+.header h1 {
+
+  margin: 0;
+
+  font-size: 1.5rem;
+
+  flex: 1;
+
+}
+
+/* DASHBOARD MAIN */
+
+.dashboard {
+
+  padding: 2rem;
+
+}
+
+.dashboard h2 {
+
+  margin-bottom: 2rem;
+
+  color: #2c3e50;
+
+}
+
+.cards {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 1.5rem;
+
+}
+
+.card {
+
+  background-color: white;
+
+  padding: 1.2rem;
+
+  border-radius: 12px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+  transition: transform 0.2s ease;
+
+}
+
+.card:hover {
+
+  transform: translateY(-5px);
+
+}
+
+.card h3 {
+
+  margin-top: 0;
+
+  color: #1abc9c;
+
+}
+
+.card p {
+
+  margin: 0.5rem 0;
+
+}
+
+.card a {
+
+  color: #2c3e50;
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+}
+
+.card a:hover {
+
+  text-decoration: underline;
+
+}
+
+/* RESPONSIVIDADE EXTRA */
+
+@media (max-width: 360px) {
+
+  .card {
+
+    padding: 1rem;
+
+    font-size: 0.9rem;
+
+  }
+
+  .logout-btn {
+
+    padding: 0.4rem 0.8rem;
+
+    font-size: 0.9rem;
+
+  }
+
+}

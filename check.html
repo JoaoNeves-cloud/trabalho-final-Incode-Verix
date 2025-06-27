@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist-Verix</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Verix - Checklist de Documentos</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <h1>Verix</h1>
+
+    <button class="logout-btn" onclick="logout()">Sair</button>
+
+  </header>
+
+  <main class="dashboard">
+
+    <h2>Checklist de Documentos</h2>
+
+    <div class="checklist-container">
+
+      <div class="doc-item" data-doc="identidade">
+
+        <h3>🪪 Documento de Identidade</h3>
+
+        <input type="file" accept="image/*,.pdf" onchange="handleUpload(event, 'identidade')" />
+
+        <p class="status">Status: <span>Pendente</span></p>
+
+      </div>
+
+      <div class="doc-item" data-doc="comprovante_renda">
+
+        <h3>📄 Comprovante de Renda</h3>
+
+        <input type="file" accept="image/*,.pdf" onchange="handleUpload(event, 'comprovante_renda')" />
+
+        <p class="status">Status: <span>Pendente</span></p>
+
+      </div>
+
+      <div class="doc-item" data-doc="comprovante_residencia">
+
+        <h3>📬 Comprovante de Residência</h3>
+
+        <input type="file" accept="image/*,.pdf" onchange="handleUpload(event, 'comprovante_residencia')" />
+
+        <p class="status">Status: <span>Pendente</span></p>
+
+      </div>
+
+    </div>
+
+    <div class="actions">
+
+      <button onclick="abrirChat()">💬 Falar com a Imobiliária</button>
+
+      <button onclick="mostrarHistorico()">📜 Ver Histórico</button>
+
+    </div>
+
+    <div id="notificacao" class="toast">📢 Documento processado com sucesso.</div>
+
+    <div id="historico" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="historico-title" tabindex="-1">
+
+      <h3 id="historico-title">Histórico de Interações</h3>
+
+      <ul id="historico-lista"></ul>
+
+      <button onclick="fecharHistorico()">Fechar</button>
+
+    </div>
+
+  </main>
+
+  <script src="js/checklist.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

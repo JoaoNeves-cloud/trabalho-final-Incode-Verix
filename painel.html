@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verix - Painel da Imobiliária</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo-painel">Verix - Painel da Imobiliária</h1>
+        <button class="botao-sair">Sair</button>
+    </header>
+
+    <main class="conteudo-principal">
+        <section class="secao-resumo">
+            <div class="cartao-resumo">
+                <span class="icone-resumo">&#9776;</span>
+                <p class="texto-resumo">Checklists<br>Pendentes</p>
+                <span class="numero-resumo">12</span>
+            </div>
+            <div class="cartao-resumo">
+                <span class="icone-resumo">&#x1F4C4;</span>
+                <p class="texto-resumo">Documentos<br>Invalidos</p>
+                <span class="numero-resumo">5</span>
+            </div>
+            <div class="cartao-resumo">
+                <span class="icone-resumo">&#x1F4AC;</span>
+                <p class="texto-resumo">mensagens<br>não lidas</p>
+                <span class="numero-resumo">3</span>
+            </div>
+        </section>
+
+        <section class="secao-processos">
+            <h2 class="titulo-secao">Processos em andamento</h2>
+            <table class="tabela-processos">
+                <thead>
+                    <tr>
+                        <th>Processo</th>
+                        <th>Status</th>
+                        <th>Última atualização</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="linha-processo" data-processo-id="001">
+                        <td>#001</td>
+                        <td>Documento pendente</td>
+                        <td>25/06/2025</td>
+                        <td><button class="botao-detalhes">Ver detalhes</button></td>
+                    </tr>
+                    <tr class="linha-processo" data-processo-id="002">
+                        <td>#002</td>
+                        <td>Checklist completo</td>
+                        <td>24/06/2025</td>
+                        <td><button class="botao-detalhes">Ver detalhes</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="secao-detalhes-processo">
+            <div class="cartao-detalhes-processo" id="detalhes-processo-001" style="display: none;">
+                <h3 class="titulo-detalhes">Detalhes do processo</h3>
+                <p class="identificador-detalhes">Identificador:....</p>
+                <p class="item-detalhe"><span class="icone-detalhe">&#x2B50;</span> RG>Enviado>Válido</p>
+                <p class="item-detalhe"><span class="icone-detalhe">&#x2B50;</span> Comprovante de renda>Pendente</p>
+                <p class="ultima-mensagem">Última mensagem:"Enviei o comprovante agora"</p>
+            </div>
+            </section>
+    </main>
+
+</body>
+</html>
